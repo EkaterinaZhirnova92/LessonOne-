@@ -67,7 +67,18 @@ namespace LessonOne
                 }
                 else
                 {
-                    Write($"У тебя {count} попыток. Введи число: ");
+                    if(count == 1)
+                    {
+                        Write($"У тебя {count} попытка. Введи число: ");
+                    }
+                    else if (count > 1 && count < 5)
+                    {
+                        Write($"У тебя {count} попытки. Введи число: ");
+                    }
+                    else if(count>=5)
+                    {
+                        Write($"У тебя {count} попыток. Введи число: ");
+                    }
                 numberOfPlayer = Int32.Parse(ReadLine());
                     countTrying++;
                     if (numberOfPlayer > magicNumber)
