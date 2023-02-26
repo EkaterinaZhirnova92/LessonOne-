@@ -114,6 +114,9 @@ namespace LessonOne
                     case 2:
                         guessNumber();
                         break;
+                    default:
+                        Environment.Exit(0);
+                        break;
                 }
                 WriteLine("\n---------------Нажмите на 1, если хотите выйти и на любую другую цифру для возвращения в меню---------------");
                 numberOfUser = Int32.Parse(ReadLine());
